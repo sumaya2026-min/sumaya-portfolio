@@ -1,0 +1,291 @@
+.heroSection{
+    display: flex;
+     padding: 0 80px;
+    align-items: center;
+    gap: 20px;
+}
+.abouttext{
+  padding: 25px;
+}
+@media (max-width: 768px) {
+    .heroSection
+ {
+        flex-direction: column;
+        padding: 25px;
+    }
+}
+h1{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-top: 10px;
+
+}
+.p{
+   font-family:Arial, Helvetica, sans-serif;
+}
+          
+.herotext{
+    flex: 1;
+}
+.heroimg{
+flex: 1;
+}
+.devimg{
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(238, 180, 240, 0.12);
+}
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+  }
+}
+.subtitle{
+    letter-spacing:3px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.descrip{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 2em;
+}
+.social-links {
+  display: flex;
+  gap: 15px;
+   padding: 0 80px;
+}
+
+.social-links a {
+  font-size: 22px;
+  color: #555;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .social-links {
+    justify-content: center;
+    padding: 0; /* remove side padding on mobile */
+  }
+}
+@media (max-width:768px) {
+  .socialtitle {
+    padding: 0 80px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+}
+
+
+.social-links a:hover {
+  color: #c6a1f4;
+  transform: translateY(-3px);
+}
+.socialtitle{
+     padding: 0 80px;
+font-weight:bold;
+  letter-spacing:3px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.full-line {
+  width: 100%;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 80px 0;
+}
+
+.feature{
+       padding: 0px 80px;
+
+}
+@media(max-width:768px){
+  .feature {
+    padding: 0px 25px;
+}
+}
+
+.sub-box{
+  letter-spacing: 3px;
+  color:#c6a1f4 ;
+  font-size: 1.2em;
+  text-transform: uppercase;
+
+}
+.boxes{
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .boxes {
+    flex-direction: column;
+  }
+}
+.box{
+  border: solid 1px #e5e7eb;
+  border-radius: 20px;
+ box-shadow: 0 4px 15px rgba(216, 150, 255, 0.2);
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+.iconbox{
+  font-size: 2em;
+  color:#c6a1f4;
+}
+
+.box:hover {
+  color: white;
+  background-color:#c6a1f4 ;
+}
+.box:hover p {
+  color: white;
+ 
+}
+.iconbox {
+  font-size: 2em;
+  color: inherit;   /* 👈 IMPORTANT */
+}
+.box {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.portfolios{
+  padding: 0px 80px;
+ 
+}
+@media (max-width: 768px) {
+    .portfolios{padding: 0px 25px;
+    }
+}
+.potfolio{
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+.portfolio-img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.portf{
+  border: solid 1px #e5e7eb;
+  border-radius: 20px;
+ box-shadow: 0 4px 15px rgba(216, 150, 255, 0.2);
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .potfolio {
+    flex-direction: column;
+  }
+}
+.box-link {
+  text-decoration: none;
+  display: inline-block;
+}
+.portfolio-tit{
+   letter-spacing: 3px;
+  color:#000000 ;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 300;
+
+}
+.box-descrip {
+  position: relative;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  padding-right: 22px;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Arrow hidden by default */
+.box-descrip .arrow {
+  opacity: 0;
+  transform: translate(-4px, 4px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  color: inherit; /* inherit purple on hover */
+}
+
+/* Hover effect */
+.box-link:hover .box-descrip {
+  color: #a855f7; /* purple */
+}
+
+.box-link:hover .arrow {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.skills-box {
+  
+  
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  color: rgb(0, 0, 0);
+}
+
+.skills-box h3 {
+  
+  margin-bottom: 15px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.bar {
+  background: #333;
+  border-radius: 20px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #c6a1f4, #7a7a7a);
+  border-radius: 20px;
+  animation: load 1.5s ease-in-out;
+}
+
+/* Skill percentages */
+.progress.html { width: 90%; }
+.progress.css { width: 85%; }
+.progress.js { width: 75%; }
+.progress.react { width: 70%; }
+.progress.wordpress { width: 80%; }
+
+
+
+/* Animation */
+@keyframes load {
+  from {
+    width: 0;
+  }
+}
