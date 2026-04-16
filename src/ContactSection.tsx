@@ -93,10 +93,7 @@ function ContactSection() {
               </button>
             </form>
 
-            <p className="formspree-note">
-              Set <code>VITE_FORMSPREE_ENDPOINT</code> in your Vercel project
-              settings to your Formspree URL.
-            </p>
+           
           </div>
         </div>
       </div>

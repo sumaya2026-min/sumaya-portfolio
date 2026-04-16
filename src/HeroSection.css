@@ -1,59 +1,64 @@
-.heroSection {
+.hero .heroSection {
   display: flex;
   padding: 0 80px;
   align-items: center;
   gap: 20px;
+  justify-content: space-between;
 }
 
-.heroText {
+.hero .heroText {
   flex: 1;
+  min-width: 320px;
 }
 
-.heroImage {
+.hero .heroImage {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.devimg {
+.hero .devimg {
   width: 400px;
+  max-width: 100%;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(238, 180, 240, 0.12);
 }
 
-.subtitle {
+.hero .subtitle {
   letter-spacing: 3px;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.title {
+.hero .title {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-top: 10px;
 }
 
-.descrip {
+.hero .descrip {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2em;
 }
 
-.social-links {
+.hero .social-links {
   display: flex;
   gap: 15px;
   padding: 0 80px;
 }
 
-.social-links a {
+.hero .social-links a {
   font-size: 22px;
   color: #555;
   transition: 0.3s;
 }
 
-.social-links a:hover {
+.hero .social-links a:hover {
   color: #c6a1f4;
   transform: translateY(-3px);
 }
 
-.socialtitle {
+.hero .socialtitle {
   padding: 0 80px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -62,17 +67,17 @@
 }
 
 @media (max-width: 768px) {
-  .heroSection {
+  .hero .heroSection {
     flex-direction: column;
     padding: 25px;
   }
 
-  .social-links {
+  .hero .social-links {
     justify-content: center;
     padding: 0;
   }
 
-  .socialtitle {
+  .hero .socialtitle {
     padding: 0 80px;
     font-weight: bold;
     letter-spacing: 3px;
