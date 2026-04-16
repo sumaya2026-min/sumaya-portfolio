@@ -2,7 +2,7 @@ import "./ContactSection.css";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaRegClock } from "react-icons/fa";
 
 const formspreeEndpoint =
-  import.meta.env.VITE_FORMSPREE_ENDPOINT || "https://formspree.io/f/mdayeylg";
+  import.meta.env.VITE_FORMSPREE_ENDPOINT || "https://formspree.io/f/mqewpwyl";
 
 function ContactSection() {
   return (
