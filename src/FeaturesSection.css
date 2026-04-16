@@ -1,0 +1,61 @@
+.feature {
+  padding: 0 80px;
+}
+
+.feature .sub-box {
+  letter-spacing: 3px;
+  color: #c6a1f4;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.boxes {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  border: solid 1px #e5e7eb;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(216, 150, 255, 0.2);
+  transition: all 0.3s ease;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.iconbox {
+  font-size: 2em;
+  color: inherit;
+}
+
+.feature .box-descrip {
+  color: #333;
+}
+
+.box:hover {
+  color: white;
+  background-color: #c6a1f4;
+}
+
+.box:hover p {
+  color: white;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .feature {
+    padding: 0 25px;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+}

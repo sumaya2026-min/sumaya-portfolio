@@ -1,14 +1,18 @@
-header{
+.Header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
-     align-items:center;
-         justify-content: space-between;
-         text-align: center;
-             padding: 0 80px;
-
-
+    align-items:center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 80px;
+    background: #f6f6f6;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 .logo{
-    width: 120px;
+    width: 90px;
 }
 .menu{
     display: flex;
@@ -37,18 +41,23 @@ header{
 
 /* Mobile styles */
 @media (max-width: 768px) {
+  .Header {
+    padding: 14px 25px;
+  }
+
   .burger {
     display: flex;
-    
   }
 
   .nav-item {
     position: absolute;
-    top: 70px;
+    top: 100%;
+    left: 0;
     right: 0;
     width: 100%;
     background: white;
     display: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   }
 
   .nav-item.show {
